@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Autoshot Target</string>
+    <string name="pick_me">Pick me, pick me! Please make a screenshot of me!</string>
+    <string name="action_settings">Settings</string>
+
+</resources>
