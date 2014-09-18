@@ -62,9 +62,7 @@ public class ScreenshotsTaker extends
 		FileUtils.deleteDirectory(new File(config.screenshotSavePath));
 		
 		solo = new Solo(getInstrumentation(), config);
-
-		resetSavedAppPreferences(getInstrumentation().getTargetContext());
-
+		
 		getActivity();
 
 		super.setUp();
@@ -141,6 +139,7 @@ public class ScreenshotsTaker extends
 			}
 
 			//Restart main activity with the proper locale and update the screenshot path
+			resetSavedAppPreferences(getInstrumentation().getTargetContext());
 			changeActivityLocale(getActivity(), locale);
 			restartActivity();
 			updateCurrentScreenshotPath();
